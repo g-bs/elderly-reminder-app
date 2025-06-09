@@ -1,0 +1,72 @@
+{
+    "patients": {
+        "kj nair": {
+            "display_name": "KJ Nair",
+            "phone": "+918547341484",
+            "medications": [
+                {
+                    "name": "Jalra",
+                    "normalized_name": "jalra",
+                    "frequency": "Weekly",
+                    "times": [
+                        "18:00"
+                    ],
+                    "day": "Monday"
+                },
+                {
+                    "name": "PPG",
+                    "normalized_name": "ppg",
+                    "frequency": "Daily",
+                    "times": [
+                        "12:36"
+                    ]
+                },
+                {
+                    "name": "PPG",
+                    "normalized_name": "ppg",
+                    "frequency": "Once",
+                    "datetime": "2025-06-08 19:30"
+                },
+                {
+                    "name": "Jalra",
+                    "normalized_name": "jalra",
+                    "frequency": "Daily",
+                    "times": [
+                        "19:30"
+                    ]
+                },
+                {
+                    "name": "Gabante Forte",
+                    "normalized_name": "gabante forte",
+                    "frequency": "Daily",
+                    "times": [
+                        "19:30"
+                    ]
+                }
+            ]
+        },
+        "syamala": {
+            "display_name": "Syamala",
+            "phone": "918547341484",
+            "medications": [
+                {
+                    "name": "PPG",
+                    "normalized_name": "ppg",
+                    "frequency": "Daily",
+                    "times": [
+                        "19:00",
+                        "18:00"
+                    ]
+                },
+                {
+                    "name": "Loenzpo",
+                    "normalized_name": "loenzpo",
+                    "frequency": "Daily",
+                    "times": [
+                        "18:00"
+                    ]
+                }
+            ]
+        }
+    }
+}
