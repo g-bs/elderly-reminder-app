@@ -152,7 +152,6 @@ def check_and_send_reminders():
             print(f"⚠️ Error saving med_schedule.json: {e}")
 
 if __name__ == "__main__":
-    print("[INFO] Reminder system started...")
-    while True:
-        check_and_send_reminders()
-        time.sleep(60)  # Check every minute
+    print("[INFO] Reminder system (cron job mode) started...")
+    check_and_send_reminders()
+    print("[INFO] Reminder system finished. Exiting.")
