@@ -7,15 +7,18 @@ from dotenv import load_dotenv
 from collections import defaultdict
 
 # Load credentials from .env file
-load_dotenv()
-account_sid = os.getenv("TWILIO_ACCOUNT_SID")
-auth_token = os.getenv("TWILIO_AUTH_TOKEN")
-from_number = os.getenv("TWILIO_FROM_NUMBER")
+#load_dotenv()
+
+
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
+from_number = os.environ['TWILIO_FROM_NUMBER']
+
 
 client = Client(account_sid, auth_token)
 
 # ✅ Set to True to prevent real calls during development
-TEST_MODE = True
+TEST_MODE = os.environ.get("TEST", "false").lower() == "true"
 
 def format_phone_number(raw_number):
     """Ensure phone number is in E.164 format for Twilio (+ followed by digits)"""
